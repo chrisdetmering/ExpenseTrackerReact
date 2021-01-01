@@ -60,11 +60,12 @@ export function ExpenseTracker() {
   }
 
 
+
   const displayedExpenses = <ul>{expenses.map(expense => { 
     return ( <Expense 
       key={expense.id} 
       expense={expense}
-      deleteExpense={() => deleteExpense(expense.id)}/> )
+      onDeleteExpense={() => deleteExpense(expense.id)}/> )
   })}</ul>
 
   return (<>

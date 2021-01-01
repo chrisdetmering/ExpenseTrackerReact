@@ -7,7 +7,7 @@ export function Expense(props) {
   } 
 
   function handleDeleteExpense() { 
-    props.deleteExpense(); 
+    props.onDeleteExpense(); 
   }
 
   return (<>
